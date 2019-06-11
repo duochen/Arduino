@@ -12,7 +12,7 @@ NewPing sonar(4,3,200);
 const int vel = 20, vel_Back = 10;                   //vel(mid), delay_Forward(mid) = (20, 750) 
 const int delay_Forward = 750, delay_Back = 1000;    //vel(max), delay_Forward(min)= (256, 50)
                                                      //wonderful ---> (10, 700) (50, 500) (100, 100) (100, 300) (100, 500)
-const int array_cal[4] = {90,90,90,90}; 
+const int array_cal[4] = {80,90,60,100};     // 0:upper right 1:lower right  2: upper left   3: lower left
 int RU_Degree = 0, LU_Degree = array_cal[2] + 5;
 
 const int num1 = 6;
@@ -36,9 +36,9 @@ const int array_turn[num2][4] =
     {0,0,0,0},
 };
 
-#define INSTALL
+//#define INSTALL
 //#define CALIBRATION
-//#define RUN
+#define RUN
 
 void Servo_Init()
 {

@@ -3,7 +3,7 @@ int greenLed = 11;
 int buzzer = 10;
 int smokeA0 = A5;
 // Gas threshold value
-int sensorThres = 400;
+int sensorThres = 200;
 
 void setup() {
   pinMode(redLed, OUTPUT);
@@ -30,4 +30,3 @@ void loop() {
   }
   delay(100);
 }
-
